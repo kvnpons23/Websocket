@@ -1,0 +1,41 @@
+.container {
+    /* background-color:#28AFB0; */
+    background-color:#2f2f2f;
+    min-height: 800px;
+    width: 500px;
+}
+.title{
+    text-align: center;
+}
+.title h1 {
+    color:#EE964B;
+}
+#message-area{
+    height:500px;
+}
+.message-form {
+    vertical-align: bottom;
+}
+
+p.left-message, p.right-message{
+    padding:10px;
+    width: 80%;
+    min-height: 20x;
+    color:#fdfdfd;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+p.left-message
+{
+    background-color:#28AFB0;
+    float:left;
+}
+
+p.right-message
+{
+    background-color:#EE964B;
+    float:right;
+}
+
+

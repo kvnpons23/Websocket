@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+    <link rel="stylesheet" href="chat.css">
+    <title>Basic Chat Application</title>
+</head>
+
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="section title">
+                <h1>Chat App</h1>
+            </div>
+            <div class="section" id="message-area">
+                <!-- <p class='left-message'>
+                    test
+                </p>
+                <p class='right-message'>
+                    test2test2test2test2test2test2test2
+                    test2test2test2test2test2test2
+                    test2test2test2test2test2test2
+                    test2test2test2test2test2test2
+                </p> -->
+            </div>
+            <div class="section message-form">
+                <form id="send-form">
+                    <div class="field">
+                        <div class="control">
+                            <div class="select is-medium">
+                                <select id="user">
+                                    <option value="1">Kevin</option>
+                                    <option value="2">Jen</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <textarea class="textarea" id="message"></textarea> <br>
+                        </div>
+                    </div>
+                    <input class="button is-primary" type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src='./chat.js'></script>
+</body>
+
+</html>
